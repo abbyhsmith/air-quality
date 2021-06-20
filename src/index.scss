@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	margin: 50px;
+}
+
+.stateSelector, .citySelector {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	select {
+		width: 300px;
+	}
+}
+
+.data {
+	text-align: center;
+	margin: 50px auto;
+	width: 550px;
+}
+
+.keyTable {
+	width: 480px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	thead {
+		text-align: center;
+		
+	}
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.label {
+	width: 140px;
+}
+
+td {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+ul {
+	position: relative;
+	left: 20px;
+	width: 300px;
+}
+
