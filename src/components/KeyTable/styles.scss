@@ -1,0 +1,56 @@
+.keyTable {
+	width: 550px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	color: var(--table-font-color);
+	td {
+		border: 1px solid var(--table-font-color);
+		padding: 10px;
+		background-color: var(--table-background-color);
+	}
+	thead {
+		text-align: center;
+		
+	}
+}
+
+.label {
+	width: 140px;
+}
+
+ul {
+	position: relative;
+	left: 10px;
+	width: 350px;
+}
+
+li {
+	list-style-type: none;
+	background-color: var(--table-background-color);
+	background-image: url('../SVG/Cloud.svg');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: left 7px;
+	padding-left: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+	.keyTable {
+		width: 410px;
+	}
+
+	ul {
+		width: 290px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.keyTable {
+		width: 350px;
+	}
+
+	ul {
+		width: 170px;
+	}
+}

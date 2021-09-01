@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import DataTable from './DataTable.js'
+import DataTable from '../DataTable/DataTable.jsx'
+import './styles.scss'
 
 const CitySelector = ({state}) => {
 	const [cities, setCities] = useState([])
@@ -7,7 +8,7 @@ const CitySelector = ({state}) => {
 
 	useEffect(() => {
 		fetch(
-			`http://api.airvisual.com/v2/cities?state=${state}&country=USA&key=6d4b01b3-7932-4277-81ac-6513625a72de`
+			`https://api.airvisual.com/v2/cities?state=${state}&country=USA&key=6d4b01b3-7932-4277-81ac-6513625a72de`
 		)
 			.then((response) => {
 				return response.json()
@@ -18,7 +19,7 @@ const CitySelector = ({state}) => {
 	}, [state])
 
 	const getAirQualityData = (city) => {
-		fetch(`http://api.airvisual.com/v2/city?&city=${city}&state=${state}&country=USA&key=6d4b01b3-7932-4277-81ac-6513625a72de`)
+		fetch(`https://api.airvisual.com/v2/city?&city=${city}&state=${state}&country=USA&key=6d4b01b3-7932-4277-81ac-6513625a72de`)
 			.then((response) => {
 				if (response) {
 					return response.json()
@@ -31,8 +32,6 @@ const CitySelector = ({state}) => {
 				console.error('Error fetching data')
 			})
 	}
-
-	console.log(airQualityData)
 
 	return (
 		<div className="citySelect">

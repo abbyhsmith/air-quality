@@ -1,6 +1,7 @@
 import React from 'react'
+import './styles.scss'
 
-const Key = () => {
+const KeyTable = () => {
 	return (
 		<table className="keyTable">
 			<thead>
@@ -49,4 +50,4 @@ const Key = () => {
 	)
 }
 
-export default Key
+export default KeyTable

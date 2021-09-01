@@ -1,0 +1,96 @@
+h1 {
+	text-align: center;
+	margin: 50px;
+	font-size: 36px;
+	color: #777777;
+}
+
+.header {
+	position: relative;
+}
+
+.cloud {
+	fill: #FFFFFF;
+	width: 80px;
+}
+
+.cloudOne {
+	position: absolute;
+	left: 300px;
+	top: 100px;
+}
+
+.cloudTwo {
+	position: absolute;
+	top: 20px;
+	right: 300px;
+}
+
+.cloudThree {
+	position: absolute;
+	top: 550px;
+	left: 100px;
+}
+
+.cloudFour {
+	position: absolute;
+	top: 450px;
+	right: 200px;
+}
+
+@media only screen and (max-width: 1100px) {
+	.cloudOne {
+		left: 200px;
+	}
+
+	.cloudTwo {
+		right: 200px;
+	}
+
+	.cloudFour {
+		right: 100px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.cloudOne {
+		left: 100px;
+	}
+
+	.cloudTwo {
+		right: 100px;
+	}
+
+	.cloudThree {
+		display: none;
+	}
+
+	.cloudFour {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.cloud {
+		width: 50px;
+	}
+
+	.cloudOne {
+		top: 50px;
+		left: 50px;
+	}
+
+	.cloudTwo {
+		right: 50px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.cloud {
+		display: none;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+}

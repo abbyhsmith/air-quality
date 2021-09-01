@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import CitySelector from './CitySelector.js'
+import CitySelector from '../CitySelector/CitySelector.jsx'
+import './styles.scss'
 
 const StateSelector = () => {
 	const [state, setState] = useState('')

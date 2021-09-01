@@ -1,0 +1,10 @@
+.stateSelector {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	select, option {
+		width: 300px;
+		background-color: #FFFFFF;
+	}
+}
